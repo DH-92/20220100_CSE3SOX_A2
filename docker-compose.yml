@@ -1,0 +1,13 @@
+services:
+  php:
+    container_name: php
+    build:
+      context: .
+      target: php
+    ports: ["80:80"]
+  
+  db:
+    container_name: db
+    build:
+      context: .
+      target: db
